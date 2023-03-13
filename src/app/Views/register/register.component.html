@@ -1,0 +1,17 @@
+<form [formGroup]="formValue">
+  <div id="login-box">
+    <div class="left">
+      <h1>Sign up</h1>    
+      <input formControlName="username" type="text" name="username" placeholder="Username" />
+      <input formControlName="email" type="text" name="email" placeholder="E-mail" />
+      <input formControlName="password" type="password" name="password" placeholder="Password" />
+      <input formControlName="confirmPassword" type="password" name="password2" placeholder="Retype password" />    
+      <button (click)="submitSignupform()" class="buttonColor">Sign Up Me</button>
+    </div>
+    <div class="right">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3xEd6t5MDcUUU4oVmDCjElhtkL9yZlxLzUUEMVtw4F0521pnH161IoVp0KJvhlYZeTOA&usqp=CAU" style="height: 250px; width: 200px;" alt="">
+      <p style="margin: 0; margin-top: 15px;">Already have a account?</p>
+      <button style="margin: 0; width: 100px;" class="social-signin twitter" (click)="loginPage()">Login</button>
+    </div>
+  </div>
+</form>
